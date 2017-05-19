@@ -24,7 +24,10 @@ sudo usermod -aG docker YourUsername
 
 
 #### Setting up server for "MoodPack" modpack
+<<<<<<< HEAD
 ------
+=======
+>>>>>>> origin/master
 This is my personal modpack called "MOOdpack" mainly meant for personal use / friends
 ##### Server side
 Simply execute command and it will generate files at /srv/minecraft/moodpack/
@@ -35,8 +38,12 @@ docker run -d -it -p 25565:25565 --name mc-moodpack -v /srv/minecraft/moodpack/w
 https://www.technicpack.net/modpack/edys-moopack
 
 
+<<<<<<< HEAD
 #### Setting up server for "The 1.7.10 modpack"
 ------
+=======
+#### Setting up server for "The 1.7.10" modpack
+>>>>>>> origin/master
 This is one of the most popular modpacks on TechnicPack.net with over 200 mods installed
 ##### Server side
 Simply execute command and it will generate files at /srv/minecraft/modpack-1.7.10/
@@ -44,4 +51,8 @@ Simply execute command and it will generate files at /srv/minecraft/modpack-1.7.
 docker run -d -it -p 25565:25565 --name minecraft -v /srv/minecraft/modpack-1.7.10/world:/srv/minecraft/world edymoo/minecraft:modpack-1.7.10
 ```
 ##### Client side
+<<<<<<< HEAD
 https://www.technicpack.net/modpack/the-1710-pack.453902
+=======
+https://www.technicpack.net/modpack/the-1710-pack.453902
+>>>>>>> origin/master
