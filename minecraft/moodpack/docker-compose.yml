@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  moodpack:
+    image: edymoo/minecraft:moodpack
+    container_name: moodpack
+    ports:
+      - '25565:25565'
+    volumes:
+      - /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world
+      - /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins
