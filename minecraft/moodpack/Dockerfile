@@ -2,8 +2,8 @@ FROM edymoo/minecraft:base
 
 WORKDIR /srv/minecraft/
 RUN wget https://github.com/edyyy/moodpack/archive/master.zip \
-	&& unzip moodpack-master.zip \
-	&& rm moodpack-master.zip \
+	&& unzip master.zip \
+	&& rm master.zip \
 	&& mv moodpack-master moodpack
 
 WORKDIR /srv/minecraft/moodpack/
