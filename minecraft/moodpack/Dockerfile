@@ -9,6 +9,6 @@ RUN wget https://github.com/edyyy/moodpack/archive/master.zip \
 WORKDIR /srv/minecraft/moodpack/
 COPY common .
 RUN chmod +x entrypoint.sh
-ENTRYPOINT /srv/minecraft/moodpack/entrypoint.sh
 
+ENTRYPOINT /srv/minecraft/moodpack/entrypoint.sh
 EXPOSE 25565
