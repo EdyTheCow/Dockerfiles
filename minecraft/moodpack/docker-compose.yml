@@ -27,4 +27,3 @@ services:
     volumes:
      - /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world
      - /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins
-     - /srv/minecraft/moodpack/whitelist.json:/srv/minecraft/moodpack/whitelist.json
