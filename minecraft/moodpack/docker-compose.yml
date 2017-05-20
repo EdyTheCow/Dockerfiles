@@ -12,7 +12,7 @@ services:
      - RAM_XMX=3G
      - MC_MAX_PLAYERS=20
      - MC_PORT=25565
-     - MC_VIEW_DISTANCE=3
+     - MC_VIEW_DISTANCE=6
      - MC_SPAWN_PROTECTION=0
      - MC_ALLOW_NETHER=false
      - MC_DIFFICULTY=1
@@ -23,7 +23,8 @@ services:
      - MC_ALLOW_FLIGHT=true
      - MC_WHITELIST=false
      - MC_GENERATE_STRUCTURES=true
-     - MC_MOTD="space test"
+     - MC_MOTD=Docker Server
     volumes:
      - /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world
      - /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins
+     - /srv/minecraft/moodpack/whitelist.json:/srv/minecraft/moodpack/whitelist.json

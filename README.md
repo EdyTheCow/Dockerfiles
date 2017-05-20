@@ -29,7 +29,7 @@ This is my personal modpack called "MOOdpack" mainly meant for personal use / fr
 ##### Server side
 Simply execute command and it will generate files at /srv/minecraft/moodpack/
 ```
-docker run -d -it -p 25565:25565 --name mc-moodpack -v /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world -v /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins edymoo/minecraft:moodpack
+docker run -d -it -p 25565:25565 --name mc-moodpack -v /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world -v /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins -v /srv/minecraft/moodpack/whitelist.json:/srv/minecraft/moodpack/whitelist.json edymoo/minecraft:moodpack
 ```
 ##### Client side
 https://www.technicpack.net/modpack/edys-moopack
