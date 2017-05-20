@@ -6,11 +6,10 @@ services:
     container_name: moodpack
     ports:
       - '25565:25565'
+    environment:
+     - MC_MAX_PLAYERS="20"
+     - MC_PORT="25565"
+     - MC_VIEW_DISTANCE="3"
     volumes:
       - /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world
       - /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins
-      
-      
-      
-      
-docker run -d -it -p 25565:25565 --name mc-moodpack -v /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world -v /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins edymoo/minecraft:moodpack
