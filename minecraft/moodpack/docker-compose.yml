@@ -10,6 +10,8 @@ services:
      - MC_MAX_PLAYERS="20"
      - MC_PORT="25565"
      - MC_VIEW_DISTANCE="3"
+     - RAM_XMS="512M"
+     - RAM_XMX="3G"
     volumes:
       - /srv/minecraft/moodpack/world:/srv/minecraft/moodpack/world
       - /srv/minecraft/moodpack/plugins:/srv/minecraft/moodpack/plugins
