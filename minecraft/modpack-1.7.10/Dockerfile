@@ -1,4 +1,4 @@
-FROM edymoo/minecraft:base
+FROM edymoo/minecraft:latest
 
 WORKDIR /srv/minecraft/
 

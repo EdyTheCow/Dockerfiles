@@ -1,4 +1,4 @@
-FROM edymoo/minecraft:base
+FROM edymoo/minecraft:latest
 
 WORKDIR /srv/minecraft/
 RUN wget https://github.com/edyyy/moodpack/archive/master.zip \
